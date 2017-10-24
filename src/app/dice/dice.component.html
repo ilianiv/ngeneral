@@ -1,0 +1,49 @@
+<div [ngSwitch]="dice.number" [class.selected]="dice.selected">
+  <div *ngSwitchCase="1" class="face first-face">
+    <span class="pip"></span>
+  </div>
+  <div *ngSwitchCase="2" class="face second-face">
+    <span class="pip"></span>
+    <span class="pip"></span>
+  </div>
+  <div *ngSwitchCase="3" class="face third-face">
+    <span class="pip"></span>
+    <span class="pip"></span>
+    <span class="pip"></span>
+  </div>
+  <div *ngSwitchCase="4" class="face fourth-face">
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+  </div>
+  <div *ngSwitchCase="5" class="face fifth-face">
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+    <div class="column">
+      <span class="pip"></span>
+    </div>
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+  </div>
+  <div *ngSwitchCase="6" class="face sixth-face">
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+    <div class="column">
+      <span class="pip"></span>
+      <span class="pip"></span>
+      <span class="pip"></span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.score-board {
+    flex: 1;
+    background-color: #cccccc;
+}
+
+.dice-board {
+    flex: 2;
+    background-color: #eeeeee;
+}
+
+:host >>> .mat-grid-tile .mat-figure {
+    padding: 10px;
+}

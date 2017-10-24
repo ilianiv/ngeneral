@@ -1,0 +1,16 @@
+<md-toolbar color="primary">
+  <span>Rolls left: {{diceSvc.rollsLeft()}}</span>
+  <span class="spacer"></span>
+  <button md-mini-fab (click)="diceSvc.submit()" [disabled]="!diceSvc.canSubmit()">
+    <md-icon>check</md-icon>
+  </button>
+</md-toolbar>
+
+<div class="dice-area">
+  <div style="display: flex; flex-direction: row">
+    <app-dice *ngFor="let d of diceSvc.dice" [dice]="d"></app-dice>
+  </div>
+  <button md-raised-button (click)="diceSvc.roll()" [disabled]="!diceSvc.canRoll()">
+    <md-icon>refresh</md-icon> Roll dice
+  </button>
+</div>
